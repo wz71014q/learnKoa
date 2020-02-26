@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon controllers/static.js",
+    "start": "nodemon entries/uploadFile.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -13,6 +13,7 @@
     "koa": "^2.11.0"
   },
   "devDependencies": {
+    "busboy": "^0.3.1",
     "chalk": "^3.0.0",
     "ejs": "^3.0.1",
     "koa-bodyparser": "^4.2.1",
