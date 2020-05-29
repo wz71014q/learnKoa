@@ -1,8 +1,11 @@
 const Koa = require('koa');
 const views = require('koa-views');
+const static = require('koa-static')
 const path = require('path');
 
 const app = new Koa();
+
+app.use(static(path.resolve(__dirname, '../assets')));
 
 app.use(views(path.join(__dirname, '../view'), {
   extension: 'ejs'
