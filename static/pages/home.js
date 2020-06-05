@@ -1,3 +1,3 @@
-// import '../views/home';
+import '../views/home';
 
 console.log('home');

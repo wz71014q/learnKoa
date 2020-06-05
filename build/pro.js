@@ -11,11 +11,12 @@ function staticResolve(file) {
 
 const buildConfig = {
   context: path.resolve(__dirname, "../"),
-  entry: {
-    home: staticResolve("home.js"),
-    details: staticResolve("details.js"),
-    life: staticResolve("life.js")
-  },
+  entry: staticResolve("home.js"),
+  // {
+  //   home: staticResolve("home.js"),
+  //   details: staticResolve("details.js"),
+  //   life: staticResolve("life.js")
+  // },
   output: {
     publicPath: "./",
     path: path.resolve(__dirname, "../dist"),
