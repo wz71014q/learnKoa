@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon entries/template.js",
     "server": "nodemon ./server.js",
+    "dev": "nodemon --delay 500ms --exec babel-node service.js",
     "build": "node ./build/pro.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +16,10 @@
     "koa": "^2.11.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
     "@babel/core": "^7.10.2",
+    "@babel/node": "^7.15.8",
+    "@babel/preset-env": "^7.16.4",
     "autoprefixer": "^9.8.0",
     "babel-loader": "^8.1.0",
     "busboy": "^0.3.1",
